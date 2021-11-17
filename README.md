@@ -26,9 +26,9 @@ Complementing these are various mapping-related functions covering:
 - UTM coordinates & MGRS grid references
 - UK Ordnance Survey (OSGB) national grid references
 
-And also functions for historical datum conversions (such as between NAD83, OSGB36, Irl1975, 
-etc) and modern reference frame conversions (such as ITRF2014, ETRF2000, GDA94, etc), 
-and conversions between geodetic (latitude/longitude) coordinates and geocentric cartesian (x/y/z) 
+And also functions for historical datum conversions (such as between NAD83, OSGB36, Irl1975,
+etc) and modern reference frame conversions (such as ITRF2014, ETRF2000, GDA94, etc),
+and conversions between geodetic (latitude/longitude) coordinates and geocentric cartesian (x/y/z)
 coordinates.
 
 There are also supporting libraries:
@@ -47,13 +47,13 @@ JavaScript-specific language features which would not be recognised by users of 
 representing maths symbols conventionally presented as Greek letters: I value the great benefit in
 legibility over the minor inconvenience in typing.
 
-This version 2 of the library uses JavaScript ES classes and modules to organise the 
-interdependencies; this makes the code both more immediately readable than previously, and also more 
-accessible to non-JavaScript readers (always  bearing in mind JavaScript uses prototype-based 
-classes rather than classical inheritance-based classes). For older browsers (or Node.js <8.0.0), 
-[v1.1.3](https://github.com/chrisveness/geodesy/tree/v1.1.3) is ES5-based. Note that there are 
-[breaking changes](https://www.movable-type.co.uk/scripts/geodesy-library-migrating-from-v1.html) 
-in moving from version 1 to version 2. 
+This version 2 of the library uses JavaScript ES classes and modules to organise the
+interdependencies; this makes the code both more immediately readable than previously, and also more
+accessible to non-JavaScript readers (always  bearing in mind JavaScript uses prototype-based
+classes rather than classical inheritance-based classes). For older browsers (or Node.js <8.0.0),
+[v1.1.3](https://github.com/chrisveness/geodesy/tree/v1.1.3) is ES5-based. Note that there are
+[breaking changes](https://www.movable-type.co.uk/scripts/geodesy-library-migrating-from-v1.html)
+in moving from version 1 to version 2.
 
 While some aspects of the library are quite complex to understand and use, basic usage is simple –
 for instance:
@@ -78,7 +78,7 @@ const brng = 306.86816;
 const p2 = p1.destinationPoint(dist, brng); // 37.6528°S, 143.9265°E
 ```
 
-Full documentation is available at [www.movable-type.co.uk/scripts/geodesy-library.html](https://www.movable-type.co.uk/scripts/geodesy-library.html), 
+Full documentation is available at [www.movable-type.co.uk/scripts/geodesy-library.html](https://www.movable-type.co.uk/scripts/geodesy-library.html),
 and tests in the [browser](https://www.movable-type.co.uk/scripts/test/geodesy-test.html) as well as
 [Travis CI](https://travis-ci.org/chrisveness/geodesy).
 
@@ -108,11 +108,12 @@ The library can be used in the browser by taking a local copy, or loading it fro
     console.assert(mid.toString('dms') == '54° 21′ 44″ N, 004° 31′ 51″ W');
 </script>
 ```
+test
 
 ### Usage in Node.js
 
-The library can be loaded from [npm](https://www.npmjs.com/package/geodesy) to be used in a Node.js app 
-(in Node.js v13.2.0+, or using the [esm](https://www.npmjs.com/package/esm) package in 
+The library can be loaded from [npm](https://www.npmjs.com/package/geodesy) to be used in a Node.js app
+(in Node.js v13.2.0+, or using the [esm](https://www.npmjs.com/package/esm) package in
 v8.0.0–v12.15.0<sup title="v12.16.0+ is not compatible with esm@3.2.25">*</sup>):
 
 ```shell
