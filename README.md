@@ -108,7 +108,6 @@ The library can be used in the browser by taking a local copy, or loading it fro
     console.assert(mid.toString('dms') == '54° 21′ 44″ N, 004° 31′ 51″ W');
 </script>
 ```
-test
 
 ### Usage in Node.js
 
